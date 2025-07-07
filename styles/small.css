@@ -29,7 +29,7 @@ header img {
 @media (max-width: 768px) {
     main {
         display: grid;
-        grid-row: auto auto auto;
+        grid-row: 1fr 1fr 1fr;
         gap: 1rem;
     }
 
