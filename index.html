@@ -3,58 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Boiketlo Nzimande">
+        <meta name="description" content="This is a course home page that has applied prerequisite knowledge of HTML, CSS, and JavaScript to design">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>WDD 231 | Home page</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+        <link rel="stylesheet" href="styles/larger.css">
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <script src="scripts/course.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="images/myself.webp" alt="Boiketlo">
-            <h1>Boiketlo Nzimande</h1>
-            <nav>
-                <a href="index.html" title="Home page">Home</a>
-                <a href="#" title="Chamber">Chamber</a>
-                <a href="#" title="Github Profile">Github Profile</a>
-                <a href="https://www.linkedin.com/in/yolanda-boiketlo-nzimande-a11b68306" title="LinkedIn">LinkedIn</a>
-            </nav>
+            <img src="images/reshot-icon-code-CZ2NMXUGQ8.svg">            
+            <h1>Boiketlo's Web Corner</h1>
+            <button type="button" id="menu"></button>
         </header>
-        <h2>Home</h2>
+        <nav class="navigation">
+            <a href="index.html" title="Home page">Home</a>
+            <a href="#" title="Chamber">Chamber Project</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
         <main>
+            <h1>Home</h1>
             <section class="box1">
-                <h2>Course work</h2>
-                <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                </ul>
+                <h2>About me</h2>
+                <p>My name is Boiketlo Yolanda Nzimande, but most people call me Yolanda — my first name can be a 
+                 bit tricky to pronounce! I was born and raised in South Africa as a strong proud zulu woman,
+                 which has shaped who I am today. Currently, I am Head of Administration for a
+                 small start-up company . When I'm not replying to emails and organising data
+                 , you'll find me spending quality time with my best friends, diving into a good book, or 
+                 losing myself in the rhythm of my favorite music.</p>
             </section>
             <section class="box2">
-                <h2>Cape Town, South Africa</h2>
-                <img src="images/table-mountain.jpg" alt="Table Mountain">
-                <p>Table Mountain</p>
+                <h2>Student Photo</h2>
+                <img src="images/myself.webp" alt="Boiketlo Nzimande" width="300px" height="400px">
             </section>
             <section class="box3">
-                <h2>Web and Computer Programming Certificate</h2>
-                <div class="course-cards">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
                     <button id="show-all">All</button>
                     <button id="show-wdd">WDD</button>
                     <button id="show-cse">CSE</button>
                 </div>
+
+                <div id="courses-list">
+                </div>
+
+                <p id="total-credits"></p>
             </section>
         </main>
         <footer>
-            <p>
+            <div class="Logo">
+                <img src="images/icons8-linkedin.svg">
+                <img src="images/icons8-github.svg">
+                <img src="images/icons8-x-logo.svg">
+            </div>
+            <div class="copyright">
+                <p>
                 ©<span id="currentyear"></span> 💕Boiketlo Nzimande💕 South Africa 
                 <img src="images/Flag_of_South_Africa.webp" alt="South African Flag" width="20">
-            </p>
-            <p>Last Modified: <span id="lastModified"></span></p>
+                </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
         </footer>
     </body>
 </html>

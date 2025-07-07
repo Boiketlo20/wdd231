@@ -1,7 +1,8 @@
 // navigation.js
-const menuButton = document.getElementById('menu-button');
-const navList = document.querySelector('nav ul');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-menuButton.addEventListener('click', () => {
-    navList.classList.toggle('active');
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
