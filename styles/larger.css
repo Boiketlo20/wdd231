@@ -34,8 +34,4 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
-
-    #show-all, #show-wdd, #show-cse{
-        display: none;
-    }
 }

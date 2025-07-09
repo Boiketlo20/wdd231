@@ -83,34 +83,26 @@ function displayCourses(courseArray) {
 const courseList = document.getElementById("courses-list");
 const creditOutput = document.getElementById("total-credits");
 
-// Clear old content
+
 courseList.innerHTML = "";
 
-let totalCredits = 0;
+const totalCredits = courseArray.reduce((sum, course) => 
+  course.completed ? sum + course.credits : sum, 0);
 
 courseArray.forEach(course => {
     const courseCard = document.createElement("div");
-    courseCard.classList.add("course");
-
-    if (course.completed) {
-      courseCard.classList.add("completed");
-    } else {
-      courseCard.classList.add("not-completed");
-    }
-
+    courseCard.classList.add("course", course.completed ? "completed" : "not-completed");
+    
     courseCard.innerHTML = `
       <p><strong>${course.subject} ${course.number}</strong></p>
     `;
 
-    if(course.completed == true){
-      totalCredits += course.credits
-    }
-
     courseList.appendChild(courseCard);
   });
 
-  creditOutput.textContent = `The total credits for courses completed is: ${totalCredits}`;
+  creditOutput.textContent = `Total credits completed: ${totalCredits}`;
 }
+
 
 displayCourses(courses);
 
