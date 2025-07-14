@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+} 
+

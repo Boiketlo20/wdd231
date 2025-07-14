@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+
+    button{
+        display: none;
+    }
+
+    nav a{
+        display: inline; /* Horizontal navigation */
+        justify-content: space-around;
+    }
+
+   .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+   }
+
+   .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+    }
+
+    .container section {
+        background-color: #f9f9f9; 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        grid-column: 1 / -1; /* Spans all columns */
+    }
+
+    /* First row of 3 boxes (Events, Current Weather, Forecast) */
+    .box1, .box2, .box3 {
+        grid-row: 2; /* Second row */
+    }
+
+    /* Second row of 3 business cards */
+    .box4, .box5, .box6 {
+        grid-row: 3; /* Third row */
+    }
+
+}
