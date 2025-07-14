@@ -1,71 +1,67 @@
-[
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    },
-
-    {
-        "name": "",
-        "address": "",
-        "email": "",
-        "phone numbers": 954,
-        "website URL": "",
-        "image or icon file names" : "",
-        "membership level (1=member, 2=silver, 3=gold)": ""
-    }
-]
+{
+    "members": [
+        {
+            "name": "Bean Tree Café",
+            "address": "Shop 12, Sasolburg Boulevard, Sasolburg, 1947",
+            "email": "info@beantreecafe.co.za",
+            "phone": "016 970 4567",
+            "website": "https://beantreecafe.co.za",
+            "image": "https://vidaonedesign.co.za/wp-content/uploads/2022/11/bean-tree-logo.png",
+            "membershipLevel": 3
+        },
+        {
+            "name": "The Artisan Co-op",
+            "address": "Next to Checkers, Sasolburg Mall, Sasolburg, 1947",
+            "email": "hello@artisancoop.co.za",
+            "phone": "072 345 6789",
+            "website": "https://artisancoop.co.za",
+            "image": "https://cdn.shopify.com/s/files/1/0242/4645/2304/files/ArtisanCo-Op_logo_AlTags3x6.png?height=628&pad_color=fff&v=1614316474&width=1200",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Devine Printing",
+            "address": "Unit 4, Industrial Park, Sasolburg, 1947",
+            "email": "orders@devineprinting.co.za",
+            "phone": "083 321 9876",
+            "website": "https://devineprinting.co.za",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUNNiUZITcZGOMZW1g6K6H41-JiQa-sLRiog&s",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Mobile Comp Tech",
+            "address": "17 President Swart Street, Sasolburg CBD, 1947",
+            "email": "support@mobilecomptech.co.za",
+            "phone": "079 888 2233",
+            "website": "https://mobilecomptech.co.za",
+            "image": "https://graphicsfamily.com/wp-content/uploads/edd/2021/12/Mobile-Tech-Logo-Design-Png.png",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Leona's Dance Company",
+            "address": "11 Zamdela Drive, Sasolburg, 1947",
+            "email": "contact@leonasdance.co.za",
+            "phone": "081 234 5670",
+            "website": "https://leonasdance.co.za",
+            "image": "https://static.wixstatic.com/media/736898_09919ed4f8c34bfd90580c06668d4f4b~mv2.jpg/v1/fill/w_160,h_160,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Sasolburg Veterinary",
+            "address": "32 Drakensberg Street, Sasolburg, 1947",
+            "email": "care@sasolvet.co.za",
+            "phone": "016 973 1122",
+            "website": "https://sasolvet.co.za",
+            "image": "https://www.sasolburgveearts.com/wp-content/uploads/2018/02/Sasolburg-Veearts-logo2.png",
+            "membershipLevel": 3
+        },
+        {
+            "name": "24 Jump Street - Trampoline Park",
+            "address": "Corner Riemland & Azalea Street, Sasolburg, 1947",
+            "email": "bookings@24jumpstreet.co.za",
+            "phone": "076 111 4444",
+            "website": "https://24jumpstreet.co.za",
+            "image": "https://jumpstreets.co.za/wp-content/uploads/2019/05/Jump-Streets-Logo-1.png",
+            "membershipLevel": 2
+        }
+    ]
+}

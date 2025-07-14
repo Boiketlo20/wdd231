@@ -35,9 +35,26 @@
         grid-row: 2; /* Second row */
     }
 
-    /* Second row of 3 business cards */
-    .box4, .box5, .box6 {
-        grid-row: 3; /* Third row */
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
     }
+
+    #cards section {
+        border: 3px outset #1abc9c;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    #cards img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+
 
 }
