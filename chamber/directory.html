@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Placeholder">
+    <meta name="description" content="We begin the Chamber of Commerce project by starting with the directory page. This assignment has you work on the site layout and specific requirements for the content of the chamber of commerce directory page.">
     <meta name="author" content="Boiketlo Nzimande">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content=""> 
-    <meta property="og:url" content="">
-    <title>Document</title>
+    <meta property="og:title" content="Sasolburg Chamber of Commerce">
+    <meta property="og:description" content="Connect with local businesses, discover upcoming events, and explore Sasolburg through the official Chamber of Commerce directory.">
+    <meta property="og:image" content="images\chamber-of-commerce-flyer.webp"> 
+    <meta property="og:url" content="https://Boiketlo20.github.io/wdd231/chamber/directory.html">
+    <title>Sasolburg Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css"> 
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </head>
@@ -21,8 +28,8 @@
     <header>
         <img src="images/icons8-image-48.png" alt="logo">
         <span>Site Name</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-        <nav>
+        <button type="button" id="menu" aria-label="Navigation menu"></button>
+        <nav class="navigation">
             <a href="index.html" title="Home page">Home</a>
             <a href="directory.html" title="Directory">Directory</a>
             <a href="#" title="Join us">Join</a>
@@ -30,6 +37,7 @@
         </nav>
     </header>
     <main>
+        <h1>Sasolburg Chamber of Commerce</h1>
         <div class="container">
             <div class="hero">
                 <img src="images/placeholder.png" alt="hero placeholder">
@@ -47,7 +55,11 @@
                 <h2>Weather Forecast</h2>
                 <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit reprehenderit laborum porro, nulla delectus ipsa nostrum provident magni veritatis et consectetur necessitatibus, ut sequi quo minus iste saepe. Quibusdam, nostrum.</P>
             </section>
-            <div id="cards"></div>
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="cards" class="grid"></div>
         </div>
     </main>
     <footer>

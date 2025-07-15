@@ -1,17 +1,85 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
+.navigation {
+	display: none;
+	flex-direction: column;
 }
 
-nav a:hover{
-    color: black;
+.navigation.open {
+  display: flex;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+h1, h2{
+  font-family: "Playfair Display", sans-serif;
+}
+
+#cards.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#cards.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#cards section {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+button{
+  background-color: #34495e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-info, .logo, .copyright {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 footer{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-} 
-
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}

@@ -28,10 +28,10 @@ const displayMembers = (members) => {
         websiteUrl.textContent = `${member.website}`; 
         // Build the image portrait by setting all the relevant attributes
         image.setAttribute('src', member.image);
-        image.setAttribute('alt', `Portrait of ${member.name} ______________`); 
+        image.setAttribute('alt', `Portrait of ${member.name}`); 
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('width', '240');
+        image.setAttribute('height', '340');
 
         // Append the section(card) with the created elements
         card.appendChild(fullName); 
@@ -44,3 +44,19 @@ const displayMembers = (members) => {
         cards.appendChild(card);  
     });
 }
+
+// Set default view to grid
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.getElementById('cards');
+  cards.classList.add('grid');
+});
+
+document.querySelector('#grid-view').addEventListener('click', () => {
+  cards.classList.remove('list');
+  cards.classList.add('grid');
+});
+
+document.querySelector('#list-view').addEventListener('click', () => {
+  cards.classList.remove('grid');
+  cards.classList.add('list');
+});

@@ -1,3 +1,7 @@
+html{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,14 +17,20 @@ header {
     text-align: center;
 }
 
-header img {
-    width: 100px;
-    height: 100px;
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 nav {
     display: flex;
-    flex-wrap: nowrap;
     align-content: center;
     background-color: #34495e;
     padding: 1rem;

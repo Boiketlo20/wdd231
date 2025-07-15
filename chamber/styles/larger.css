@@ -1,45 +1,45 @@
 @media (min-width: 768px) {
+    #menu {
+		display: none;
+	}
 
-    button{
-        display: none;
-    }
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		position: static;
+		background: none;
+		padding: 0;
+	}
 
     nav a{
         display: inline; /* Horizontal navigation */
         justify-content: space-around;
     }
 
-   .container{
+    .container{
         display: grid;
-        grid-template-columns: auto auto auto;
-   }
-
-   .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px; 
-    }
-
-    .container section {
-        background-color: #f9f9f9; 
-        padding: 1rem;
-        box-sizing: border-box;
-    }
-
-    .hero {
-        grid-column: 1 / -1; /* Spans all columns */
-    }
-
-    /* First row of 3 boxes (Events, Current Weather, Forecast) */
-    .box1, .box2, .box3 {
-        grid-row: 2; /* Second row */
-    }
-
-    #cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: 20px;
+        margin: 0 auto;
+    }
+
+    .hero{
+        grid-column: 1/-1;
+    }
+
+    #cards.grid {
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    #cards.list {
+        grid-column: 1/-1 ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     #cards section {
@@ -47,14 +47,25 @@
         padding: 1rem;
         background-color: #fff;
         border-radius: 5px;
+        overflow: hidden;
     }
 
-    #cards img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 10px;
+    #cards.list img {
+        display: none;
     }
 
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+    }
 
-
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
 }
