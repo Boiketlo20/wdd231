@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We begin the Chamber of Commerce project by starting with the directory page. This assignment has you work on the site layout and specific requirements for the content of the chamber of commerce directory page.">
+    <meta name="author" content="Boiketlo Nzimande">
+    <meta property="og:title" content="Sasolburg Chamber of Commerce">
+    <meta property="og:description" content="Connect with local businesses, discover upcoming events, and explore Sasolburg through the official Chamber of Commerce directory.">
+    <meta property="og:image" content="https://boiketlo20.github.io/wdd231/chamber/images/chamber-of-commerce-flyer.webp"> 
+    <meta property="og:url" content="https://Boiketlo20.github.io/wdd231/chamber/directory.html">
+    <title>Sasolburg Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css"> 
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/blue-minimalist cloud-business-logo.svg" alt="icon logo" width="150" height="150">
+        <button type="button" id="menu" aria-label="Navigation menu"></button>
+        <nav class="navigation">
+            <a href="index.html" class="active" title="Home page">Home</a>
+            <a href="directory.html" title="Directory">Directory</a>
+            <a href="#" title="Join us">Join</a>
+            <a href="#" title="Discovery">Discovery</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Sasolburg Chamber of Commerce</h1>
+        <div class="container">
+            <div class="hero">
+                <img src="images/property-4958407-64434076_dhd.webp" alt="hero placeholder">
+                <button id="CTA">Call to Action</button>
+            </div>
+            <section class="box1">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia quas at laborum, aliquid deleniti alias enim harum possimus suscipit sunt illum, porro obcaecati corporis. Similique fuga voluptatem quaerat. Voluptatem.</p>
+            </section>
+            <section class="box2">
+                <h2>Current weather</h2>
+                <p>The current temperature in Sasolburg, South Africa is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="cards" class="grid"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>24 Maritz Street </p>
+            <p> Sasolburg 1947 </p>
+            <p>info@sasolburg.com</p>
+            <p>(+27) 76 886 0251</p>
+        </div>
+        <div class="logo">
+            <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn">
+                <img src="images/icons8-linkedin.svg" alt="linkedin iocn">
+            </a>
+            <a href="https://github.com/boiketlo20" aria-label="Facebook">
+                <img src="images/icons8-facebook-logo.svg" alt="facebook logo">
+            </a>
+            <a href="https://twitter.com/yourprofile" aria-label="X (Twitter)">
+                <img src="images/icons8-x-logo.svg" alt="x(Twitter) icon">
+            </a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Boiketlo Nzimande</p>
+            <p>©<span id="currentyear"></span> Sasolburg Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
