@@ -26,10 +26,9 @@ function displaySpotlightMembers(members){
         let email = document.createElement('p')
         let phone = document.createElement('p')
         let websiteUrl = document.createElement('a')
-        let membershipLevel = document.createElement('p'); // ← ADD THIS LINE
+        let membershipLevel = document.createElement('p'); 
         let image = document.createElement('img');
 
-        // Build the h2 content out to show the prophet's full name
         fullName.textContent = `${member.name}`; 
         const levelText = member.membershipLevel == 3 ? 'Gold Member' : 'Silver Member';
         membershipLevel.textContent = levelText;
@@ -37,14 +36,13 @@ function displaySpotlightMembers(members){
         email.textContent = `${member.email}`; 
         phone.textContent = `${member.phone}`; 
         websiteUrl.textContent = `${member.website}`; 
-        // Build the image portrait by setting all the relevant attributes
+     
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Portrait of ${member.name}`); 
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '240');
         image.setAttribute('height', '340');
 
-        // Append the section(card) with the created elements
         card.appendChild(fullName); 
         card.appendChild(address);
         card.appendChild(email);
@@ -59,7 +57,6 @@ function displaySpotlightMembers(members){
 
 getMembers();
 
-// Set default view to grid
 document.addEventListener('DOMContentLoaded', () => {
   const cards = document.getElementById('cards');
   cards.classList.add('grid');

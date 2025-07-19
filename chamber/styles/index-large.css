@@ -12,7 +12,7 @@
 	}
 
     nav a{
-        display: inline; /* Horizontal navigation */
+        display: inline; 
         justify-content: space-around;
     }
 
