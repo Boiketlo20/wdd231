@@ -80,25 +80,28 @@ const courses = [
 ]
 
 function displayCourses(courseArray) {
-const courseList = document.getElementById("courses-list");
-const creditOutput = document.getElementById("total-credits");
 
+    const courseList = document.getElementById("courses-list");
+    const creditOutput = document.getElementById("total-credits");
 
-courseList.innerHTML = "";
+    courseList.innerHTML = "";
 
-const totalCredits = courseArray.reduce((sum, course) => 
-  course.completed ? sum + course.credits : sum, 0);
+    const totalCredits = courseArray.reduce((sum, course) => 
+        course.completed ? sum + course.credits : sum, 0);
 
-courseArray.forEach(course => {
-    const courseCard = document.createElement("div");
-    courseCard.classList.add("course", course.completed ? "completed" : "not-completed");
+        courseArray.forEach(course => {
+        const courseCard = document.createElement("div");
+        courseCard.classList.add("course", course.completed ? "completed" : "not-completed");
     
-    courseCard.innerHTML = `
-      <p><strong>${course.subject} ${course.number}</strong></p>
-    `;
+        courseCard.innerHTML = `
+            <p><strong>${course.subject} ${course.number}</strong></p>
+        `;
 
-    courseList.appendChild(courseCard);
-  });
+        courseList.appendChild(courseCard);
+        courseList.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+    });
 
   creditOutput.textContent = `Total credits completed: ${totalCredits}`;
 }
@@ -120,6 +123,25 @@ document.getElementById("show-wdd").addEventListener("click", () => {
   displayCourses(filtered);
 });
 
+const courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+  
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
 
 

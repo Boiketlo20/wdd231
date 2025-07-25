@@ -1,7 +1,7 @@
 /* Styles for larger screens (min-width: 768px) */
 @media (min-width: 768px) {
 
-    button{
+    #menu{
         display: none;
     }
 
