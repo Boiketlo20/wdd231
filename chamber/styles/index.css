@@ -78,7 +78,6 @@ h1, h2{
 h1{
   position: absolute;
   padding-left: 30px;
-  margin-bottom: 20px;
 }
 
 .hero{
@@ -248,9 +247,15 @@ input[type=submit] {
   appearance: none;
 }
 
-  
+.cont{
+  display: grid;
+}
+
+.cont h1{
+  position: relative;
+}
+
 #results {
-  margin-top: 5rem;
   background-color: white;
   padding: 0 1rem;
   border: 3px solid var(--secondary-color);
