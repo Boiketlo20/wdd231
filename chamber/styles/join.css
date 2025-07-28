@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+    #menu {
+		display: none;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		position: static;
+		background: none;
+		padding: 0;
+	}
+
+    nav a{
+        display: inline; 
+        justify-content: space-around;
+    }
+
+    .form-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1200px;
+  align-items: start;
+}
+
+    .form-section-grid form,
+    .form-section-grid section {
+        width: 100%;
+    }
+
+    form, section {
+        grid-column: auto !important;
+  }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
