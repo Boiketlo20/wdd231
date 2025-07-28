@@ -78,6 +78,7 @@ h1, h2{
 h1{
   position: absolute;
   padding-left: 30px;
+  margin-bottom: 20px;
 }
 
 .hero{
@@ -187,13 +188,13 @@ form {
   label {
     display: block;
     font-size: .8rem;
-    color: purple;
+    color: var(--primary-color);
     padding-top: .2rem;
   }
 
   h3 {
     font-size: .9rem;
-    color: #E07A5F;
+    color: black;
     margin: 1.5rem 0 .2rem 0;
     border-bottom: 1px solid #eee;
   }
@@ -217,7 +218,7 @@ form {
 
   textarea{
     display: block;
-     margin: .1rem 0 1rem 0 ;
+    margin: .1rem 0 1rem 0 ;
   }
   
   input:required {border-left-color: #d70000;}
@@ -243,8 +244,33 @@ input:-webkit-autofill{
 }
   
 #results {
-  background-color: #F4F1DE;
+  margin-top: 5rem;
+  background-color: white;
   padding: 0 1rem;
-  border: 1px solid #E07A5F;
+  border: 3px solid var(--secondary-color);
   border-radius: 6px;
+}
+
+#box{
+  display: grid;
+  gap: 20px;
+}
+
+#box {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
