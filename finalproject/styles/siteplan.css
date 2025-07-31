@@ -1,0 +1,36 @@
+span{
+    font-weight: 900;
+    color: #294C60;
+}
+
+body{
+    background-color: #FFEFD3;
+    color: #294C60;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    border: 1px solid #294C60;
+    padding: 5px;
+    margin: 20px;
+}
+
+h1{
+    font-family: "Satisfy", sans-serif;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
