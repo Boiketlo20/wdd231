@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css"> 
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script type="module" src="scripts/card-places.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +35,9 @@
         </nav>
     </header>
     <main>
-
+        <div class="sidebar-cards"></div>
+        <div id="message"></div>
+        <div id="allplaces"></div>
     </main>
     <footer>
         <div class="contact-info">

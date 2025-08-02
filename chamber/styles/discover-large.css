@@ -1,0 +1,40 @@
+/*medium screen*/
+@media screen and (min-width : 641px) and (max-width : 1024px) {
+
+    #allplaces div{
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo location"
+        "button button";
+    }
+
+    #allplaces div img{
+        width:300px ;
+    }
+
+    #allplaces div img:hover{
+       box-shadow: 0 0 50px #333;
+    }
+}
+
+/*large screen*/
+@media screen and (min-width : 1025px) {
+
+    #allplaces{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allplaces div{
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo location"
+        "button button";
+    }
+
+    #allplaces div img:hover{
+       box-shadow: 0 0 50px #333;
+    }
+}
