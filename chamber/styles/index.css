@@ -75,7 +75,7 @@ h1, h2{
   font-family: "Playfair Display", sans-serif;
 }
 
-h1{
+.in-box{
   position: absolute;
   padding-left: 30px;
 }
