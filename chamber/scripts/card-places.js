@@ -9,6 +9,7 @@ function displayItems(places){
 
         const thephoto = document.createElement('img')
         thephoto.src = `images/${x.imageURL}`
+        thephoto.loading = 'lazy';
         thephoto.alt = x.name
         thephoto.width = 300
         thephoto.height = 200
