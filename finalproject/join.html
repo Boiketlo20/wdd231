@@ -33,13 +33,13 @@
             </nav>
         </header>
         <main>
-            <div class="form-section-grid">
+            <h1 class="book-title">Sign up to Recieve Personalized Recommendations</h1>
+            <div>
                 <div class="form-area">
-                    <h2>Recommendation Subscription Form</h2>
-                    <form method="GET" action="welcome.html" class="designOne" onsubmit="return setTimestamp()" >
+                    <form method="GET" action="welcome.html" onsubmit="return setTimestamp()" >
                         <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                         <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                        <label>Favourite Author <input type="text" name="author" required autocomplete="author-name-surname"></label>
+                        <label>Favourite Author <input type="text" name="author" required autocomplete="author-name"></label>
                         <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
                         <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="+27-55-760-1234" ></label>
 
@@ -49,7 +49,7 @@
                         <label><input type="radio" name="genre" value="fantasy"> Fantasy</label>
                         <label><input type="radio" name="genre" value="young-adult"> Young Adult</label>
 
-                        <div class="levels-area">
+                        <div>
                             <h2>Join our Community Forums</h2>
                              <h3>Select a Forum that Best Suits You</h3>
                             <label><input type="checkbox" name="forum1" value="romance">Romance Readers Reading</label>
@@ -77,7 +77,7 @@
                         </div>
 
                         <input type="hidden" id="submissionTime" name="submissionTime">
-                        <input type="submit" value="Join Membership" id="submit-button">
+                        <input type="submit" value="Sign Up" id="submit-button">
                     </form>
                 </div>
             </div>
