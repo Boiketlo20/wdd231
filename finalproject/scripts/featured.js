@@ -11,12 +11,12 @@ async function getTrendingBooks() {
     if (!response.ok) {
       throw new Error(`Response Status: ${response.status}`);
     }
-
     const data = await response.json();
     displayBooks(data.items);
 
   } catch (error) {
     console.error(error.message);
+    alert('Oops! Please try again later.');
   }
 }
 
