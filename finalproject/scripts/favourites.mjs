@@ -1,5 +1,5 @@
 import {books} from '../data/books.mjs'
-console.log(books)
+//console.log(books)
 
 export const Favourites = {
 

@@ -1,5 +1,5 @@
 const getString = window.location.search;
-console.log(getString);
+//console.log(getString);
 
 const myInfo = new URLSearchParams(getString);
 const selectedForums = [];

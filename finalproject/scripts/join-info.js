@@ -1,4 +1,4 @@
-//Learn More membership buttons
+//Learn More buttons
 const openButton = document.querySelector('#openButton');
 const dialogBox = document.querySelector('#dialogBox');
 const closeButton = document.querySelector('#closeButton');

@@ -1,5 +1,5 @@
 import {books} from '../data/books.mjs'
-console.log(books)
+//console.log(books)
 import { Favourites } from './favourites.mjs';
 
 const cards = document.querySelector('#cards');
