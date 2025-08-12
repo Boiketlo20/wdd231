@@ -304,21 +304,3 @@ h2{
 p{
   font-family: var(--font-family3);
 }
-
-/* ABOUT PAGE STYLING */
-
-.about-hero{
-  width: 100%;
-  height: auto;
-}
-
-.community-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.community-grid img{
-  width: 100%;
-  height: auto;
-}
