@@ -40,10 +40,11 @@ function displayBooks(books) {
     desc.textContent = info.description ? info.description.substring(0, 150) + "..." : "No description available.";
 
     const image = document.createElement('img');
-
-    image.src = info.imageLinks ? info.imageLinks.thumbnail : "placeholder.jpg";
+    const imageUrl = (book.volumeInfo.imageLinks?.thumbnail || "placeholder.jpg").replace("http://", "https://");
+    image.src = imageUrl;
     image.setAttribute("loading", "lazy");
-    image.setAttribute("alt", info.title);
+    image.setAttribute("alt", book.volumeInfo.title);
+
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(rating);
