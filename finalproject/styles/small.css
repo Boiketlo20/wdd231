@@ -154,18 +154,25 @@ footer{
 }
 
 footer .col {
-    margin-bottom: 5px;
-    width: 100%;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 footer .col p {
-    width: 100%;
+  width: 100%;
 }
 
 footer p{
-    font-family: var(--font-family3);
-    font-weight: 100;
+  font-family: var(--font-family3);
+  font-weight: 100;
 }
+
+.icons a {
+  display: inline-block;
+  padding: 10px; /* Makes the hit area 44×44px if img is 24×24px */
+  margin: 0 4px; /* Adds spacing between icons */
+}
+
 
 /* CARD STYLING */
 section {
@@ -215,7 +222,6 @@ label {
 
 input[type=text],
 input[type=tel],
-input[type=date],
 input[type=email],
 select {
   display: block;
@@ -230,9 +236,11 @@ select {
   width: 250px;
 }
 
-textarea {
-  display: block;
-  margin: .1rem 0 1rem 0;
+input[type="radio"],
+input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  padding: 12px;
 }
 
 input:required {
