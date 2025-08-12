@@ -29,10 +29,10 @@ function displayItems(books){
 
         const thephoto = document.createElement('img')
         thephoto.src = `${book.image_url}`
-        thephoto.loading = 'lazy';
-        thephoto.alt = book.name
-        thephoto.width = 240
-        thephoto.height = 340
+        thephoto.setAttribute("loading", "lazy");
+        thephoto.setAttribute("alt", book.name);
+        thephoto.setAttribute("width", "240");
+        thephoto.setAttribute("height", "340");
         thecard.appendChild(thephoto)
 
         const heartBtn = document.createElement('button');

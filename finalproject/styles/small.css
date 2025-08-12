@@ -308,3 +308,9 @@ p{
 .book-title{
   color: var(--primary-colour);
 }
+
+/* IMAGE STYLING */
+#cards div img{
+  width : 240px;
+  height : 340px;
+}
