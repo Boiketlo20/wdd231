@@ -304,3 +304,7 @@ h2{
 p{
   font-family: var(--font-family3);
 }
+
+.book-title{
+  color: var(--primary-colour);
+}
