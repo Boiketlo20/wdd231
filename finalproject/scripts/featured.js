@@ -44,8 +44,6 @@ function displayBooks(books) {
     image.src = info.imageLinks ? info.imageLinks.thumbnail : "placeholder.jpg";
     image.setAttribute("loading", "lazy");
     image.setAttribute("alt", info.title);
-    image.setAttribute("width", "240");
-    image.setAttribute("height", "340");
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(rating);

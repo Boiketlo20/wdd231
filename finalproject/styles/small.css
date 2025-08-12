@@ -115,6 +115,10 @@ header span{
     font-family: var(--font-family2);
 }
 
+.hero-text p{
+  font-weight: 500;
+}
+
 .cta-btn{
     background-color: var(--secondary-colour);
     color: #132733;
