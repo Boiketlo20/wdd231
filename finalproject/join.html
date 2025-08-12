@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Get personalized book recommendations and join exclusive book forums. Subscribe now to stay updated with Literary Escape's latest picks!">
+        <meta name="author" content="Boiketlo Nzimande">
+        <meta property="og:title" content="Subscribe for Book Recommendations | Literary Escape">
+        <meta property="og:description" content="Get personalized book recommendations and join exclusive book forums. Subscribe now to stay updated with Literary Escape's latest picks!">
+        <meta property="og:image" content="https://Boiketlo20.github.io/wdd231/finalproject/images/brown-artsy-book-loyalty-card.png"> 
+        <meta property="og:url" content="https://Boiketlo20.github.io/wdd231/finalproject/join.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Subscribe for Book Recommendations | Literary Escape</title>
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/join-info.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/Green Elegant Butterfly Book Club Logo.svg" width="250" height="250"> 
+            <span>Literary Escape</span>
+            <button id="hambtn" class="hamburger"></button>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html" >Home</a>
+                    <li><a href="find-book.html">Books</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-section-grid">
+                <div class="form-area">
+                    <h2>Recommendation Subscription Form</h2>
+                    <form method="GET" action="welcome.html" class="designOne" onsubmit="return setTimestamp()" >
+                        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                        <label>Favourite Author <input type="text" name="author" required autocomplete="author-name-surname"></label>
+                        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                        <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="+27-55-760-1234" ></label>
+
+                        <h3>Select Favourite Genre</h3>
+                        <label><input type="radio" name="genre" value="romance">Romance</label>
+                        <label><input type="radio" name="genre" value="self-help"> Self Help</label>
+                        <label><input type="radio" name="genre" value="fantasy"> Fantasy</label>
+                        <label><input type="radio" name="genre" value="young-adult"> Young Adult</label>
+
+                        <div class="levels-area">
+                            <h2>Join our Community Forums</h2>
+                             <h3>Select a Forum that Best Suits You</h3>
+                            <label><input type="checkbox" name="forum1" value="romance">Romance Readers Reading</label>
+                            <label><input type="checkbox" name="forum2" value="self-help">Self Help : For the Emotionally Intelligent</label>
+                            <label><input type="checkbox" name="forum3" value="fantasy">Fantasy Lovers</label>
+                            <label><input type="checkbox" name="forum4" value="booktok">Booktok</label>
+                            <label><input type="checkbox" name="forum5" value="young-adult">Addicted to YA</label>
+                            <label><input type="checkbox" name="forum6" value="book-haven"> Book Haven</label>
+                            <label><input type="checkbox" name="forum7" value="christian"> Christian Fiction</label>
+                            <label><input type="checkbox" name="forum8" value="whats-the-name"> What's the Name??</label>
+                            <div id="box">
+                                <section><p>Romance Readers Reading</p><button type="button" id="openButton1">Learn More</button></section>
+                                <section><p>What's the Name??</p><button type="button" id="openButton2">Learn More</button></section>
+                                <section><p>Christian Fiction</p><button type="button" id="openButton3">Learn More</button></section>
+                                <section><p>Book Haven</p><button type="button" id="openButton4">Learn More</button></section>
+                                <section><p>Addicted to YA</p><button type="button" id="openButton5">Learn More</button></section>
+                                <section><p>Booktok</p><button type="button" id="openButton6">Learn More</button></section>
+                                <section><p>Fantasy Lovers</p><button type="button" id="openButton7">Learn More</button></section>
+                                <section><p>Self Help : For the Emotionally Intelligent</p><button type="button" id="openButton8">Learn More</button></section>
+                                <dialog id="dialogBox">
+                                    <div id="info"></div>
+                                    <button type="button" id="closeButton">Close</button>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="submissionTime" name="submissionTime">
+                        <input type="submit" value="Join Membership" id="submit-button">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="section-p1">
+            <div class="col">
+                <h4>Contact</h4>
+                <p> <span>Address:</span> 142 Beethoven St, Vanderbijlpark S. W. 5, Vanderbijlpark, 1911</p>
+                <p> <span>Phone:</span> +27 76 886 0251/+27 83 315 3355</p>
+                <p> <span>Hours:</span> 09:00 - 17:00 Mon - Sat</p>
+            </div>
+            <div class="col">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <a href="http://facebook.com"> <img src="images/317727_facebook_social media_social_icon.svg" alt="facebook"> </a>
+                    <a href="https://twitter.com"> <img src="images/317720_social media_tweet_twitter_social_icon.svg" alt="twitter"> </a>
+                    <a href="https://instagram.com"> <img src="images/1298747_instagram_brand_logo_social media_icon.svg" alt="instagram" width="35" height="35"> </a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Delivery information</p>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <p>Sign In</p>
+                <p>View Cart</p>
+                <p>My Wishlist</p>
+                <p>Track My Order</p>
+                <p>Help</p>
+            </div>
+            <div class="col">
+                <h4>Sign up</h4>
+                <div class="newstext">
+                    <input type="text" placeholder="Your email address">
+                    <button>Sign Up</button>
+                </div>
+                <p>By signing up you consent to receive email's about Literary Escape's latest updates, offers, and news as 
+                well as information about how to participate in events or competitions. </p>
+            </div>
+        </footer>
+    </body>
+    </html>
